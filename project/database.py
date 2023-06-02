@@ -1,11 +1,13 @@
 import hashlib
 
+from local_settings import UsER_DATABSE
+from local_settings import PASSWORD_DATABSE
 import datetime
 from peewee import *
 
 database = MySQLDatabase('fastapi_project', 
-        user='root',
-        password='DATABASEPASSWORD',
+        user=UsER_DATABSE,
+        password=PASSWORD_DATABSE,
         host='localhost',
         port=3306)
 
